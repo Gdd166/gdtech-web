@@ -102,15 +102,6 @@
     .modo.destacado p, .modo.destacado .rotulo { color: #B9B9C2; }
     .modo.destacado .grande { color: #fff; }
 
-    /* Apps */
-    .app { display: grid; grid-template-columns: 96px 1fr auto; gap: 32px; align-items: start; border-top: 2px solid var(--tinta); padding-top: 32px; }
-    .app-icono { width: 96px; height: 96px; display: block; }
-    .app-botones { display: flex; flex-direction: column; gap: 10px; align-items: stretch; }
-    .app-botones .btn { justify-content: center; }
-    .app h3 { font-family: var(--titulo); font-size: 1.7rem; margin: 6px 0 6px; }
-    .app p { margin: 0 0 16px; color: var(--suave); max-width: 34em; }
-    .app ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 260px)); gap: 6px 28px; font-size: .95rem; }
-    .app li::before { content: "— "; color: var(--azul); font-family: var(--mono); }
 
     /* Contacto */
     .contacto { background: var(--tinta); color: #fff; }
@@ -136,10 +127,6 @@
       .modos { grid-template-columns: 1fr; }
       .modo { border-left: 0; border-top: 1px solid var(--linea); }
       .modo:first-child { border-top: 0; }
-      .app { grid-template-columns: 72px 1fr; gap: 20px; }
-      .app-icono { width: 72px; height: 72px; }
-      .app .app-botones { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; }
-      .app ul { grid-template-columns: 1fr; }
       section { padding: 72px 0; }
     }
     @media (max-width: 480px) {
@@ -187,7 +174,6 @@
       <nav>
         <a href="#servicios">Servicios</a>
         <a href="#como">Cómo trabajo</a>
-        <a href="#apps">Apps</a>
         <a href="#contacto">Contacto</a>
       </nav>
       <a class="btn btn-azul btn-chico" href="https://wa.me/5491138134584?text=Hola%20Gustavo%2C%20te%20contacto%20desde%20la%20web%20de%20GDTECH" target="_blank" rel="noopener">WhatsApp</a>
@@ -263,44 +249,11 @@
     </div>
   </section>
 
-  <!-- Apps -->
-  <section id="apps">
-    <div class="contenedor">
-      <div class="cabecera">
-        <span class="rotulo"><b>03</b> / Apps GDTECH</span>
-        <div>
-          <h2>Aplicaciones para tu día a día</h2>
-          <p>Herramientas simples, hechas en Argentina. Probalas gratis antes de decidir.</p>
-        </div>
-      </div>
-      <div class="app">
-        <img class="app-icono" src="/logo.svg" alt="Ícono de GDgest">
-        <div>
-          <span class="rotulo"><b>Demo gratis · 15 días</b></span>
-          <h3>GDgest</h3>
-          <p>Administrador de finanzas personales pensado para Argentina: tus tarjetas, tus cuotas y cuánto te queda cada mes.</p>
-          <ul>
-            <li>Cuotas de tarjeta que avanzan solas</li>
-            <li>Préstamos, ingresos y gastos fijos</li>
-            <li>Lo que te deben, siempre a mano</li>
-            <li>"Este mes te queda" al instante</li>
-            <li>Tus datos quedan en tu dispositivo</li>
-            <li>Versión completa para PC y Android</li>
-          </ul>
-        </div>
-        <div class="app-botones">
-          <a class="btn btn-azul btn-chico" href="https://app.gdtechsoporte.com.ar" target="_blank" rel="noopener">Probar demo</a>
-          <a class="btn btn-linea btn-chico" href="https://wa.me/5491138134584?text=Hola%20Gustavo%2C%20quiero%20la%20versi%C3%B3n%20completa%20de%20GDgest%20para%20" target="_blank" rel="noopener">Quiero la versión completa</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contacto -->
   <section id="contacto" class="contacto">
     <div class="contenedor">
       <div>
-        <span class="rotulo">04 / Contacto</span>
+        <span class="rotulo">03 / Contacto</span>
         <h2>¿Tu equipo te está dando problemas?</h2>
       </div>
       <div>
