@@ -1,0 +1,8 @@
+# Encabezados de seguridad de GDTECH (los aplica Cloudflare a todas las páginas)
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-PMVKSPY7Lp3zn/IRMLcv2FLAPoPJtqIp6Kx69K7Eq9k='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'; object-src 'none'
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000
