@@ -111,6 +111,9 @@
     .telefono { display: block; font-family: var(--titulo); font-weight: 700; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.01em; text-decoration: none; color: #fff; border-bottom: 3px solid var(--azul); padding-bottom: 6px; margin-bottom: 18px; width: fit-content; }
     .telefono:hover { border-color: #fff; }
     .contacto p { color: #B9B9C2; margin: 0 0 24px; }
+    .botones-contacto { display: flex; flex-wrap: wrap; gap: 12px; }
+    .contacto .nota-resena { margin: 16px 0 0; font-size: .92rem; }
+    @media (max-width: 480px) { .contacto .btn { width: 100%; justify-content: center; } }
 
     footer { padding: 26px 0; border-top: 1px solid var(--linea); font-size: .9rem; color: var(--suave); }
     footer .contenedor { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
@@ -259,10 +262,17 @@
       <div>
         <a class="telefono" href="https://wa.me/5491138134584?text=Hola%20Gustavo%2C%20necesito%20soporte%20t%C3%A9cnico" target="_blank" rel="noopener">11 3813-4584</a>
         <p>Escribime por WhatsApp. Atención personalizada a cargo de Gustavo · Horarios a convenir.</p>
+        <div class="botones-contacto">
         <a class="btn btn-azul" href="https://wa.me/5491138134584?text=Hola%20Gustavo%2C%20necesito%20soporte%20t%C3%A9cnico" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.83 9.83 0 001.746 5.634l-.999 3.648 3.742-.981z"/></svg>
           Abrir WhatsApp
         </a>
+        <a class="btn btn-linea" href="https://g.page/r/CUvOkgHFHwgMEBM/review" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+          Dejá tu reseña en Google
+        </a>
+        </div>
+        <p class="nota-resena">¿Ya te ayudé? Tu opinión en Google me ayuda a que más vecinos me encuentren.</p>
       </div>
     </div>
   </section>
