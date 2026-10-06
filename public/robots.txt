@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gdtechsoporte.com.ar/sitemap.xml
