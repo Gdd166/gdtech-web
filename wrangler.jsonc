@@ -1,10 +1,21 @@
 {
-  // Página web de GDTECH (sitio estático en Cloudflare Workers, gratis)
+  // Página web de GDTECH (Cloudflare Workers, gratis)
   "name": "gdtech",
+  "main": "src/index.js",
   "compatibility_date": "2026-09-01",
   "workers_dev": true,
   "preview_urls": false,
   "assets": {
-    "directory": "./public"
-  }
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  // Contador de visitas (Durable Object con SQLite, incluido en el plan gratis)
+  "durable_objects": {
+    "bindings": [
+      { "name": "CONTADOR", "class_name": "Contador" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["Contador"] }
+  ]
 }

@@ -9,6 +9,7 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0B1530">
   <link rel="icon" href="/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="/logo-512.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
@@ -46,6 +47,110 @@
   </script>
   
   
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta revisar mi equipo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El diagnóstico es sin cargo: reviso el equipo y te digo qué tiene y cuánto sale antes de arreglarlo. Si hay traslado, se suma el viático. Si el equipo no tiene arreglo, solo se cobra el viático (si lo hubo)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tienen precios fijos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cada caso es distinto, por eso te paso el presupuesto cuando me escribís por WhatsApp, una vez que sé qué le pasa al equipo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo se paga?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En efectivo o por transferencia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda la reparación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del problema. Siempre busco que esté listo en el día o de un día para el otro; por lo general, 72 horas como máximo. Si hay que conseguir un repuesto, puede demorar más y te aviso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Atienden urgencias, fines de semana y feriados?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, y sin recargo: se trata igual que cualquier asistencia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El trabajo tiene garantía?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Los servicios técnicos —formateo, mantenimiento preventivo, limpieza interna, cambio de pasta térmica y reemplazo de unidades de almacenamiento— cuentan con una garantía de 7 (siete) días corridos sobre la mano de obra. En el reemplazo de componentes, la garantía de 7 días cubre exclusivamente la instalación; cualquier falla del componente no atribuible a la mano de obra queda sujeta a la garantía otorgada por su proveedor o fabricante."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Si hay que formatear, ¿pierdo mis archivos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Antes de formatear siempre hago una copia de seguridad y te consulto si hay algo puntual que quieras guardar, siempre que el disco funcione correctamente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Trabajan con Mac (Apple)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Me especializo en Windows. Para equipos Mac, consultame y vemos si puedo ayudarte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cambian repuestos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí: reemplazo la pieza que falla (disco, memoria, pantalla, teclado, batería) por una nueva o reacondicionada, que compra el cliente. No hago reparaciones de electrónica en placas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Arreglan celulares o tablets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, trabajo con PC, notebooks, impresoras y redes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo funciona el soporte remoto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Me conecto a tu equipo con tu permiso, usando Asistencia rápida de Windows o AnyDesk, y lo resolvemos sin que te muevas. Se paga después, una vez resuelto el problema."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hacen visitas a domicilio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, a hogares y comercios, según la zona. Lo coordinamos por WhatsApp."
+        }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -153,10 +258,30 @@
     .red { display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px; border: 1px solid var(--linea); color: #fff; text-decoration: none; font-weight: 600; font-size: .95rem; transition: border-color .15s, background .15s; }
     .red:hover { border-color: #fff; background: rgba(255,255,255,.06); }
     .red svg { width: 20px; height: 20px; }
-    .pie-links { display: inline-flex; align-items: center; gap: 16px; }
+    .pie-links { display: inline-flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 8px 16px; }
+    .pie-links .visitas { flex-basis: 100%; text-align: right; }
+    @media (max-width: 700px) { .pie-links { justify-content: flex-start; } .pie-links .visitas { text-align: left; } }
     .pie-red { display: inline-flex; }
     .pie-red svg { width: 20px; height: 20px; }
     .pie-red:hover { color: var(--tinta); }
+    .faqs { border-top: 2px solid var(--tinta); max-width: 900px; }
+    .faq { border-bottom: 1px solid var(--linea); }
+    .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; font-family: var(--titulo); font-weight: 700; font-size: 1.15rem; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; font-family: var(--mono); font-size: 1.5rem; color: var(--azul); flex: none; transition: transform .2s; }
+    .faq[open] summary::after { transform: rotate(45deg); }
+    .faq summary:hover { color: #fff; }
+    .faq p { margin: 0 0 22px; color: var(--suave); max-width: 46em; }
+    .modo-ilus { display: block; width: 100%; max-width: 260px; height: auto; margin: -8px 0 18px -10px; }
+    .cab-izq { display: flex; flex-direction: column; gap: 22px; }
+    .cab-ilus { width: 100%; max-width: 240px; height: auto; margin-left: -14px; }
+    .galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .foto { margin: 0; border: 1px solid var(--linea); background: #0F1B3B; }
+    .foto img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+    .foto figcaption { padding: 12px 14px; font-size: .92rem; color: var(--suave); border-top: 1px solid var(--linea); }
+    .visitas { font-family: var(--mono); font-size: .78rem; letter-spacing: .06em; color: var(--suave); opacity: .8; }
+    @media (max-width: 900px) { .galeria { grid-template-columns: repeat(2, 1fr); } .cab-ilus { display: none; } }
+    @media (max-width: 480px) { .galeria { grid-template-columns: 1fr; } }
     footer { padding: 26px 0; border-top: 1px solid var(--linea); font-size: .9rem; color: var(--suave); }
     footer .contenedor { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
@@ -219,11 +344,15 @@
       <nav>
         <a href="#servicios">Servicios</a>
         <a href="#como">Cómo trabajo</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#preguntas">Preguntas</a>
         <a href="#contacto">Contacto</a>
       </nav>
       <a class="btn btn-azul btn-chico" href="https://wa.me/5491138134584?text=Hola%20Gustavo%2C%20te%20contacto%20desde%20la%20web%20de%20GDTECH" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </header>
+
+  <main>
 
   <!-- Portada -->
   <section class="portada">
@@ -260,7 +389,7 @@
   <section id="servicios">
     <div class="contenedor">
       <div class="cabecera">
-        <span class="rotulo"><b>01</b> / Servicios</span>
+        <div class="cab-izq"><span class="rotulo"><b>01</b> / Servicios</span><img class="cab-ilus" src="/img/ilus-redes.svg" alt="" width="600" height="400" loading="lazy"></div>
         <div>
           <h2>Lo que puedo resolver por vos</h2>
           <p>Para tu casa o tu local: equipos que andan lentos, que no prenden, impresoras que fallan o internet que se corta.</p>
@@ -288,9 +417,93 @@
         </div>
       </div>
       <div class="modos">
-        <div class="modo destacado"><div class="grande">A</div><span class="rotulo">Recomendado</span><h3>Traé tu equipo</h3><p>Coordinamos por WhatsApp, me acercás la PC o notebook y te aviso cuando está lista, con el detalle de lo que se hizo.</p></div>
-        <div class="modo"><div class="grande">B</div><span class="rotulo">Sin moverte</span><h3>Soporte remoto</h3><p>Para problemas de programas, configuraciones, correo o impresión: me conecto a distancia y lo resolvemos juntos.</p></div>
-        <div class="modo"><div class="grande">C</div><span class="rotulo">Comercios</span><h3>Visita al local</h3><p>Para comercios con urgencias en la caja, la red o las impresoras, coordinamos una visita.</p></div>
+        <div class="modo destacado"><img class="modo-ilus" src="/img/ilus-taller.svg" alt="" width="600" height="400" loading="lazy"><div class="grande">A</div><span class="rotulo">Recomendado</span><h3>Traé tu equipo</h3><p>Coordinamos por WhatsApp, me acercás la PC o notebook y te aviso cuando está lista, con el detalle de lo que se hizo.</p></div>
+        <div class="modo"><img class="modo-ilus" src="/img/ilus-remoto.svg" alt="" width="600" height="400" loading="lazy"><div class="grande">B</div><span class="rotulo">Sin moverte</span><h3>Soporte remoto</h3><p>Para problemas de programas, configuraciones, correo o impresión: me conecto a distancia y lo resolvemos juntos.</p></div>
+        <div class="modo"><img class="modo-ilus" src="/img/ilus-impresora.svg" alt="" width="600" height="400" loading="lazy"><div class="grande">C</div><span class="rotulo">Comercios</span><h3>Visita al local</h3><p>Para comercios con urgencias en la caja, la red o las impresoras, coordinamos una visita.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trabajos -->
+  <section id="trabajos">
+    <div class="contenedor">
+      <div class="cabecera">
+        <span class="rotulo"><b>03</b> / Del taller</span>
+        <div>
+          <h2>Trabajos reales</h2>
+          <p>Algunos de los equipos que pasaron por GDTECH en Lanús, Banfield y Lomas de Zamora.</p>
+        </div>
+      </div>
+      <div class="galeria">
+        <figure class="foto"><img style="object-position: center 12%" src="/img/trabajo-reparacion-windows.jpg" alt="Pantalla de reparación automática de Windows en una PC con problemas de arranque" width="337" height="599" loading="lazy" decoding="async"><figcaption>PC que no iniciaba: reparación del arranque de Windows</figcaption></figure>
+        <figure class="foto"><img src="/img/trabajo-placa-madre.jpg" alt="Revisión de una placa madre y su cableado durante un diagnóstico" width="799" height="599" loading="lazy" decoding="async"><figcaption>Diagnóstico de placa madre y conexiones</figcaption></figure>
+        <figure class="foto"><img src="/img/trabajo-armado-ssd.jpg" alt="Gabinete abierto con un disco SSD nuevo listo para instalar" width="300" height="599" loading="lazy" decoding="async"><figcaption>Actualización con disco SSD</figcaption></figure>
+        <figure class="foto"><img style="object-position: center 30%" src="/img/trabajo-impresoras-red.jpg" alt="Programa EpsonNet Config con varias impresoras Epson configuradas en red" width="276" height="599" loading="lazy" decoding="async"><figcaption>Configuración de impresoras Epson en red</figcaption></figure>
+        <figure class="foto"><img style="object-position: left center" src="/img/trabajo-impresora-ip.jpg" alt="Error al agregar una impresora por dirección IP, previo a su diagnóstico" width="900" height="396" loading="lazy" decoding="async"><figcaption>Impresora en red que no respondía</figcaption></figure>
+        <figure class="foto"><img src="/img/trabajo-equipo-listo.jpg" alt="PC de escritorio funcionando con Windows después del servicio" width="337" height="599" loading="lazy" decoding="async"><figcaption>Equipo entregado y funcionando</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas frecuentes -->
+  <section id="preguntas">
+    <div class="contenedor">
+      <div class="cabecera">
+        <span class="rotulo"><b>04</b> / Dudas comunes</span>
+        <div>
+          <h2>Preguntas frecuentes</h2>
+          <p>Si tu duda no está acá, escribime por WhatsApp y te respondo.</p>
+        </div>
+      </div>
+      <div class="faqs">
+        <details class="faq">
+          <summary>¿Cuánto cuesta revisar mi equipo?</summary>
+          <p>El diagnóstico es sin cargo: reviso el equipo y te digo qué tiene y cuánto sale antes de arreglarlo. Si hay traslado, se suma el viático. Si el equipo no tiene arreglo, solo se cobra el viático (si lo hubo).</p>
+        </details>
+        <details class="faq">
+          <summary>¿Tienen precios fijos?</summary>
+          <p>Cada caso es distinto, por eso te paso el presupuesto cuando me escribís por WhatsApp, una vez que sé qué le pasa al equipo.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Cómo se paga?</summary>
+          <p>En efectivo o por transferencia.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Cuánto tarda la reparación?</summary>
+          <p>Depende del problema. Siempre busco que esté listo en el día o de un día para el otro; por lo general, 72 horas como máximo. Si hay que conseguir un repuesto, puede demorar más y te aviso.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Atienden urgencias, fines de semana y feriados?</summary>
+          <p>Sí, y sin recargo: se trata igual que cualquier asistencia.</p>
+        </details>
+        <details class="faq">
+          <summary>¿El trabajo tiene garantía?</summary>
+          <p>Sí. Los servicios técnicos —formateo, mantenimiento preventivo, limpieza interna, cambio de pasta térmica y reemplazo de unidades de almacenamiento— cuentan con una garantía de 7 (siete) días corridos sobre la mano de obra. En el reemplazo de componentes, la garantía de 7 días cubre exclusivamente la instalación; cualquier falla del componente no atribuible a la mano de obra queda sujeta a la garantía otorgada por su proveedor o fabricante.</p>
+        </details>
+        <details class="faq">
+          <summary>Si hay que formatear, ¿pierdo mis archivos?</summary>
+          <p>No. Antes de formatear siempre hago una copia de seguridad y te consulto si hay algo puntual que quieras guardar, siempre que el disco funcione correctamente.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Trabajan con Mac (Apple)?</summary>
+          <p>Me especializo en Windows. Para equipos Mac, consultame y vemos si puedo ayudarte.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Cambian repuestos?</summary>
+          <p>Sí: reemplazo la pieza que falla (disco, memoria, pantalla, teclado, batería) por una nueva o reacondicionada, que compra el cliente. No hago reparaciones de electrónica en placas.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Arreglan celulares o tablets?</summary>
+          <p>No, trabajo con PC, notebooks, impresoras y redes.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Cómo funciona el soporte remoto?</summary>
+          <p>Me conecto a tu equipo con tu permiso, usando Asistencia rápida de Windows o AnyDesk, y lo resolvemos sin que te muevas. Se paga después, una vez resuelto el problema.</p>
+        </details>
+        <details class="faq">
+          <summary>¿Hacen visitas a domicilio?</summary>
+          <p>Sí, a hogares y comercios, según la zona. Lo coordinamos por WhatsApp.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -299,7 +512,7 @@
   <section id="contacto" class="contacto">
     <div class="contenedor">
       <div>
-        <span class="rotulo">03 / Contacto</span>
+        <span class="rotulo">05 / Contacto</span>
         <h2>¿Tu equipo te está dando problemas?</h2>
       </div>
       <div>
@@ -325,6 +538,8 @@
     </div>
   </section>
 
+  </main>
+
   <footer>
     <div class="contenedor">
       <span>© <span id="anio"></span> GDTECH · Soporte informático · gdtechsoporte.com.ar</span>
@@ -332,6 +547,7 @@
         <a class="pie-red" href="https://www.instagram.com/gdtechsop/" target="_blank" rel="noopener" aria-label="Instagram de GDTECH"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
         <a class="pie-red" href="https://www.facebook.com/profile.php?id=61595329282475" target="_blank" rel="noopener" aria-label="Facebook de GDTECH"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
         <a href="/privacidad.html">Política de privacidad</a>
+        <span id="visitas" class="visitas" hidden></span>
       </span>
     </div>
   </footer>
@@ -341,5 +557,6 @@
   </a>
 
   <script>document.getElementById("anio").textContent = new Date().getFullYear();</script>
+  <script src="/contador.js" defer></script>
 </body>
 </html>

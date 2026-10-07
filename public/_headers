@@ -1,6 +1,7 @@
 # Encabezados de seguridad de GDTECH (los aplica Cloudflare a todas las páginas)
+# cloudflareinsights.com = contador de visitas de Cloudflare Web Analytics
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-PMVKSPY7Lp3zn/IRMLcv2FLAPoPJtqIp6Kx69K7Eq9k='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'; object-src 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-PMVKSPY7Lp3zn/IRMLcv2FLAPoPJtqIp6Kx69K7Eq9k=' 'sha256-8mVqH63to8k6Bx9K3wVTq3tEBH5wnF87V9KclisPUSk=' 'sha256-HSrSM0ENZCNAQOdJZe0dIzIFLuJ9BFMgESTZGkMfUOc=' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; frame-ancestors 'none'; base-uri 'self'; form-action 'none'; object-src 'none'
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
